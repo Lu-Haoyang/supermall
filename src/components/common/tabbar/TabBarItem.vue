@@ -12,7 +12,7 @@
     props: {
 			link: {
 				type: String,
-        required: true
+        required: true,
       }
     },
     computed: {
@@ -25,7 +25,9 @@
     },
     methods: {
 			itemClick() {
-				this.$router.replace(this.link)
+        if(!this.isActive){
+          this.$router.replace(this.link)
+        }			
       }
     }
 	}

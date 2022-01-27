@@ -33,8 +33,8 @@ export default {
   text-align: center;
 }
 .recommend-item img {
-  width: 6rem;
-  height: 6rem;
-  margin-bottom: 0.5rem;
+  width: 90%;
+  height: calc(width);
+  margin-bottom: 10px;
 }
 </style>
